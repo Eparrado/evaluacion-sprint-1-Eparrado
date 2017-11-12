@@ -6,7 +6,8 @@ body {
   font-family: 'Rubik', sans-serif;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 400px;
+  color: #555555;
 }
 
 .header {
@@ -36,4 +37,10 @@ body {
   line-height: 200px;
   text-align: center;
   padding: 0;
+}
+
+.section:hover {
+  color: #3CDBC0;
+  text-decoration: underline;
+
 }
