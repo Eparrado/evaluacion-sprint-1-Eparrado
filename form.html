@@ -19,22 +19,25 @@
   </header>
 
   <main class="form-main">
-      <p>
-        En Adalab estamos encantados de proporcionarte la información que necesitas. Hemos creado formularios específicos para inscribirte como alumna, para ser voluntario/a y para empresas que quieran acoger a nuestras alumnas. Para otras consultas completa el siguiente formulario y nos prondremos en contancto contigo. Gracias.
-      </p>
+    <p>
+      En Adalab estamos encantados de proporcionarte la información que necesitas. Hemos creado formularios específicos para inscribirte como alumna, para ser voluntario/a y para empresas que quieran acoger a nuestras alumnas. Para otras consultas completa el siguiente formulario y nos prondremos en contancto contigo. Gracias.
+    </p>
 
     <form class="container-form" action="" method="post">
-      <label for="firstname">Nombre</label>
+      <label for="firstname">Nombre*</label>
       <input id="firstname" type="text" name="firstname">
-      <label for="surename">Apellido</label>
+      <label for="surename">Apellido*</label>
       <input id="surename" type="text" name="lastname">
-      <label for="email">Correo electrónico</label>
+      <label for="email">Correo electrónico*</label>
       <input id="email" type="email" name="mail">
-      <label for="phonenumber">Teléfono</label>
+      <label for="phonenumber">Teléfono*</label>
       <input id="phonenumber" type="tel" name="telephone">
       <label for="comments">Mensaje</label>
       <textarea id="comments" name="comments" rows="8" cols="80"></textarea>
-      <input type="submit" value="Enviar">
+      <div class="button">
+        <input class="button-send"type="submit" value="Enviar">
+      </div>
+
     </form>
   </main>
 
