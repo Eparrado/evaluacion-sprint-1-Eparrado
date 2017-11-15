@@ -16,14 +16,14 @@ a {
 .blank-space {
   background-color: white;
   width: 100%;
-  margin-bottom: 20%;
+  margin-bottom: 80px;
 }
 .text {
   text-transform: capitalize;
   line-height: 2.5em;
   position: absolute;
-  top: 20%;
-  left: 5%;
+  top: 30%;
+  left: 2%;
 
 }
 img {
@@ -32,10 +32,11 @@ img {
   display: block;
 }
 .small-logo{
-  width: 80%;
+  width: 100%;
 }
 .header {
   width: 100%;
+  height: 80px;
   top: 0;
   padding: 0 20px;
   background-color: white;
@@ -47,15 +48,13 @@ img {
   z-index: 1;
 }
 
-
 .menu-sections {
   width: 100%;
   height: 50px;
+  list-style: none;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  background-color: white;
-  padding-left: 50%
+  margin-left: 60%;
 }
 .section {
   width: 100%;
@@ -130,12 +129,30 @@ input,textarea {
   .text {
     font-size: 0.7em;
   }
+
+  .small-logo {
+    width: 100%;
+  }
+
+  .menu-sections {
+    width: 100%;
+    height: 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: auto;
+  }
+}
+
 }
 
 @media all and (max-width:500px) {
+
   .menu-sections {
-    display: inline-flex;
-    justify-content: flex-start;
+    display: absolute;
+    display: block;
+    margin-left: 0;
+    padding-left: 0;
   }
   .text {
     font-size: 0.5em;
