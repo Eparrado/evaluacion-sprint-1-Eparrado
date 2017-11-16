@@ -120,13 +120,13 @@ a {
 /*clase p texto inicial formulario*/
 .form-main {
   margin-top: 150px;
-  padding: 0 40px;
+  padding: 0 5%;
 }
 
 /*clase contenedor formulario*/
 .container-form {
-  margin: 50px;
-  padding: 0 30%;
+  margin: 3%;
+  padding: 0 20%;
   display: flex;
   flex-direction: column;
 }
