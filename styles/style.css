@@ -5,7 +5,7 @@
 body {
   font-family: 'Rubik', sans-serif;
   font-size: 10px;
-  line-height: 14px;
+
   color: #555555;
   margin: 0;
 }
@@ -38,24 +38,21 @@ a {
 
 /*clase contenedor logo adalab*/
 .header-logo {
-  margin: 0;
   margin-left: 5%;
   margin-top: 5%;
   padding-left: 1em;
-  align-self: flex-start;
 }
 
 /*clase logo adalab*/
-.small-logo{
+.small-logo {
   max-width: 30%;
 }
 
 /*clase contenedor ul*/
 .menu-sections {
-  width: 100%;
   height: auto;
-  padding-left: 0;
-  margin-left: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 /*clase li*/
@@ -64,7 +61,6 @@ a {
   display: inline;
   list-style: none;
   padding-left: 1em;
-  margin-left: 0;
   text-transform: uppercase;
   font-size: 1em;
   text-decoration: none;
@@ -129,7 +125,6 @@ a {
 
 /*clase contenedor formulario*/
 .container-form {
-  width: 100%;
   margin: 50px;
   padding: 0 30%;
   display: flex;
@@ -163,44 +158,49 @@ input,textarea {
 
 /*responsive*/
 @media all and (min-width:500px) {
-
-  .text {
-    font-size: 1.3em;
-
-  }
-
-  body {
-    font-size: 14px;
-  }
-
-  .small-logo {
-    width: 100%;
-  }
-}
-
-@media all and (min-width:900px) {
-
+  /*cambios letras más grandes y posicion*/
   body {
     font-size: 16px;
   }
-
   .text {
-    font-size: 1.5em;
-
+    font-size: 1.8em;
+    top: 160px;
   }
-
-  .small-logo {
-    width: 100%;
-  }
-
-  .menu-sections {
-    width: 100%;
-    height: 50px;
-    list-style: none;
+  /*cambios secciones arriba a la derecha*/
+  .header {
+    height: 65px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    padding-left: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  /*cambios logo*/
+  .small-logo{
+    max-width: 50%;
+  }
+  .header-logo {
+    margin: 0;
+    align-self: center;
+  }
+  /*cambios altura margen bottom div*/
+  .blank-space {
+    margin-bottom: 65px;
+  }
+}
+
+
+@media all and (min-width:900px) {
+
+  /*cambios letras más grandes y posicion*/
+  body {
+    font-size: 20px;
+  }
+  .text {
+    font-size: 3em;
+  }
+  /*cambios logo*/
+  .small-logo {
+    max-width: 70%;
   }
 }
